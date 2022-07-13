@@ -1,0 +1,10 @@
+{
+  "resources/js/site.js": {
+    "file": "assets/site.fba58036.js",
+    "src": "resources/js/site.js",
+    "isEntry": true,
+    "css": [
+      "assets/site.634731d2.css"
+    ]
+  }
+}
