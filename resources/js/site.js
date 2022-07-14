@@ -4,3 +4,4 @@
 import '/resources/sass/app.scss';
 
 import 'bootstrap/dist/js/bootstrap'
+import '@splidejs/splide/dist/js/splide.min'
