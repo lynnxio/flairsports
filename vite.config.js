@@ -23,7 +23,7 @@ export default defineConfig({
     },
     envPrefix: 'MIX_',
     server: {
-        host: '192.68.56.10',
+        host: '192.168.56.56',
         watch: {
             usePolling: true,
         },
