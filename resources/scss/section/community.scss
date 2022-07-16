@@ -1,0 +1,24 @@
+@use "../abstracts" as abs;
+
+.community {
+  padding: 5em 2em;
+
+  .title {
+    color: abs.$blue;
+    font-size: abs.$font-size-primary;
+    font-weight: bold;
+    line-height: 60px;
+    margin-bottom: 1em;
+  }
+
+  .imgContainer {
+  }
+
+  img {
+    margin-bottom: 2em;
+    border-radius: 10px;
+    box-shadow: abs.$shadow-primary;
+    width: 100%;
+    cursor: pointer;
+  }
+}

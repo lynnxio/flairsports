@@ -1,7 +1,30 @@
 // This is all you.
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import '/resources/sass/app.scss';
+import '/resources/scss/app.scss';
 
-import 'bootstrap/dist/js/bootstrap'
-import '@splidejs/splide/dist/js/splide.min'
+// import '@popperjs/core'
+import 'bootstrap'
+import '@splidejs/splide'
+import 'lity'
+
+import Splide from '@splidejs/splide';
+
+var elms = document.getElementsByClassName('splide');
+
+for (var i = 0; i < elms.length; i++) {
+    new Splide(elms[i], {
+        lazyLoad: 'nearby',
+        paginationKeyboard: true,
+        paginationDirection: 'ltr',
+        keyboard: 'focused',
+        slideFocus: true,
+        breakpoints: {
+            992: {
+                lazyLoad: "nearby",
+                perPage: 1,
+                arrows: false
+            }
+        }
+    }).mount();
+}

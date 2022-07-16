@@ -1,0 +1,37 @@
+@use "../abstracts" as abs;
+
+.footer {
+  background-color: abs.$white;
+  color: abs.$blue;
+  padding: 3em 2em;
+
+  &__companyName {
+    font-family: abs.$font-family-primary;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  &__address {
+    font-family: abs.$font-family-secondary;
+    font-size: abs.$font-size-secondary;
+  }
+
+  &__link {
+    display: flex;
+    place-items: center;
+    text-decoration: none;
+    padding-top: 1em;
+
+    img {
+      width: 2em;
+    }
+  }
+
+  &__linkText {
+    padding-left: 1em;
+    color: abs.$blue;
+    font-weight: abs.$font-family-primary;
+    font-size: 1.3em;
+  }
+}

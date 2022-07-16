@@ -1,10 +1,15 @@
 {
   "resources/js/site.js": {
-    "file": "assets/site.fba58036.js",
+    "file": "assets/site.244bcf6e.js",
     "src": "resources/js/site.js",
     "isEntry": true,
     "css": [
-      "assets/site.634731d2.css"
+      "assets/app.1ffa4a4a.css"
     ]
+  },
+  "resources/scss/app.scss": {
+    "file": "assets/app.1ffa4a4a.css",
+    "src": "resources/scss/app.scss",
+    "isEntry": true
   }
 }

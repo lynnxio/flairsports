@@ -18,8 +18,9 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
+        "@popperjs/core": "^2.11.5",
         "@splidejs/splide": "^4.0.7",
         "bootstrap": "^5.2.0-beta1",
-        "jquery": "^3.6.0"
+        "lity": "^2.4.1"
     }
 }

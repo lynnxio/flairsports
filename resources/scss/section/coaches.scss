@@ -1,0 +1,54 @@
+@use "../abstracts" as abs;
+
+.coaches {
+  background-image: url("../../assets/meet-the-coaches-bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5em 0;
+
+  .title {
+    color: abs.$white;
+    font-size: abs.$font-size-primary;
+    text-align: center;
+    font-weight: bold;
+    font-family: abs.$font-family-primary;
+  }
+
+  .card {
+    box-shadow: abs.$shadow-primary;
+    border-radius: 10px;
+    margin: 6em 0 5em 15%;
+    display: grid;
+    place-items: center;
+    width: 70%;
+    position: relative;
+
+    &__img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    &__content {
+      position: absolute;
+      bottom: 0;
+      background-color: abs.$pink;
+      width: 100%;
+      color: abs.$white;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 1em;
+      text-align: center;
+    }
+
+    &__name {
+      font-size: abs.$font-size-secondary;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+
+    &__desription {
+      font-size: abs.$font-size-secondary;
+    }
+  }
+}

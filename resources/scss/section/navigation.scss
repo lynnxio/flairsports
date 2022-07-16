@@ -1,0 +1,14 @@
+.nav-link{
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+.navbar-nav .show > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+li.nav-item {
+  background-color: rgba(#002448, 0.8);
+  border-radius: 10px;
+  margin-bottom: 1em;
+}

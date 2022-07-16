@@ -1,0 +1,10 @@
+@use '../abstracts' as abs;
+
+.sponsors {
+  background-color: abs.$white;
+  padding: 3em 0;
+
+  img {
+    width: 80%;
+  }
+}

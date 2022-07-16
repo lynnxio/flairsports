@@ -1,0 +1,48 @@
+@use "../abstracts" as abs;
+
+.contactUs {
+
+  background-color: abs.$blue;
+
+  &__container {
+    padding: 5em 2em 5em 2em;
+  }
+
+  &__header {
+    background-color: abs.$pink;
+    font-family: abs.$font-family-primary;
+    font-size: abs.$font-size-primary;
+    color: abs.$white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  &__title {
+    color: abs.$white;
+    font-size: abs.$font-size-primary;
+    font-weight: bold;
+    font-family: abs.$font-family-primary;
+  }
+
+  &__subtitle {
+    color: abs.$white;
+    font-size: abs.$font-size-secondary;
+    font-family: abs.$font-family-secondary;
+    padding-bottom: 2em;
+  }
+
+  &__button {
+    color: abs.$white;
+    background-color: abs.$pink;
+    font-weight: bold;
+    font-family: abs.$font-family-secondary;
+    text-align: center;
+    padding: 0.8em 0;
+    border-radius: 30px;
+    margin-top: 2em;
+    width: 50%;
+    display: grid;
+    place-items: center;
+  }
+}
