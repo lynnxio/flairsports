@@ -1,5 +1,3 @@
-// This is all you.
-
 // import '@popperjs/core'
 import 'bootstrap'
 import '@splidejs/splide'
