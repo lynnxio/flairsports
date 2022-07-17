@@ -23,6 +23,10 @@
     text-decoration: none;
     padding-top: 1em;
 
+    @include abs.min-bp(lg) {
+      padding-left: 20%;
+    }
+
     img {
       width: 2em;
     }
@@ -33,5 +37,11 @@
     color: abs.$blue;
     font-weight: abs.$font-family-primary;
     font-size: 1.3em;
+  }
+
+  &__logo {
+    @include abs.min-bp(lg) {
+      margin-bottom: 1em
+    }
   }
 }

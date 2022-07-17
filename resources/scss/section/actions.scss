@@ -24,9 +24,14 @@
     position: relative;
     margin-bottom: 4em;
 
+    @include abs.min-bp(lg) {
+      padding: 4em 1em 0 1em;
+    }
+
     &__thumbnail {
       width: 100%;
       height: auto;
+      box-shadow: abs.$shadow-primary;
     }
 
     &__playButton {

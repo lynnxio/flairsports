@@ -5,21 +5,43 @@ import 'lity'
 
 import Splide from '@splidejs/splide';
 
-var elms = document.getElementsByClassName('splide');
+new Splide('#slider1', {
+    lazyLoad: 'nearby',
+    paginationKeyboard: true,
+    paginationDirection: 'ltr',
+    keyboard: 'focused',
+    slideFocus: true,
+    perPage: 3,
+    arrows: false,
+    breakpoints: {
 
-for (var i = 0; i < elms.length; i++) {
-    new Splide(elms[i], {
-        lazyLoad: 'nearby',
-        paginationKeyboard: true,
-        paginationDirection: 'ltr',
-        keyboard: 'focused',
-        slideFocus: true,
-        breakpoints: {
-            992: {
-                lazyLoad: "nearby",
-                perPage: 1,
-                arrows: false
-            }
+        992: {
+            lazyLoad: "nearby",
+            perPage: 1,
+            arrows: false
         }
-    }).mount();
-}
+    }
+}).mount();
+
+new Splide('#slider2', {
+    lazyLoad: 'nearby',
+    paginationKeyboard: true,
+    paginationDirection: 'ltr',
+    keyboard: 'focused',
+    slideFocus: true,
+    perPage: 3,
+    type: 'loop',
+    padding: '5em',
+    pagination: false,
+    breakpoints: {
+
+        992: {
+            type: false,
+            padding: false,
+            lazyLoad: "nearby",
+            perPage: 1,
+            arrows: false,
+            pagination: true
+        }
+    }
+}).mount();

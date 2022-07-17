@@ -1,12 +1,27 @@
 @use "../abstracts" as abs;
 
 .founder {
-  background-image: url("/public/assets/founder-bg-image-mobile.jpg");
+  background-image: url("/public/assets/founder/bg-img-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   padding-top: 5em;
-  height: 1100px;
+  height: 1170px;
+
+  @include abs.min-bp(lg) {
+    background-image: url("/public/assets/founder/bg-img.jpg");
+    display: grid;
+    height: 100vh;
+    place-items: center;
+  }
+
+  &__container {
+    display: block;
+    @include abs.min-bp(lg) {
+      display: grid;
+      grid-template-columns: 60% 40%;
+    }
+  }
 
   .card {
     background: #002448;
@@ -16,6 +31,17 @@
     padding: 1em;
     border-left: abs.$pink 15px solid;
     margin-bottom: 2em;
+
+    @include abs.min-bp(lg) {
+      padding: 1em 2em 2em 2em;
+    }
+
+    &--2 {
+      @include abs.min-bp(lg) {
+        margin-left: 15%;
+        padding: 2em;
+      }
+    }
 
     &__title {
       color: abs.$white;
@@ -33,10 +59,15 @@
   &__image {
     position: absolute;
     bottom: 0;
-    left: 0;
     right: 0;
+    left: 0;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    @include abs.min-bp(lg) {
+      width: 24vw;
+      right: 10%;
+      left: initial;
+    }
   }
 }

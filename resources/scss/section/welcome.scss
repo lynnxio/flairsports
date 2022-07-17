@@ -7,6 +7,11 @@
   height: 100vh;
   position: relative;
 
+  @include abs.min-bp(lg) {
+    background-image: url("/public/assets/welcome-bg-img.jpg");
+    background-size: cover;
+  }
+
   &__position {
     position: absolute;
     bottom: 0;
@@ -22,6 +27,10 @@
     border-radius: 10px;
     position: relative;
 
+    @include abs.min-bp(lg) {
+      padding: 1.5em;
+    }
+
     &__smallTitle {
       color: #FFFFFF;
       font-size: abs.$font-size-secondary;
@@ -34,6 +43,10 @@
       margin-bottom: 5%;
       margin-top: 5%;
       font-family: abs.$font-family-primary;
+
+      @include abs.min-bp(lg) {
+        font-weight: bold;
+      }
 
       &--2 {
         padding-left: 2em;
@@ -56,8 +69,16 @@
       right: -7%;
       top: -10%;
 
+      @include abs.min-bp(lg) {
+        right: 2%;
+        top: -12%;
+      }
+
       img {
         width: 60vw;
+        @include abs.min-bp(lg) {
+          width: 23vw;
+        }
       }
     }
   }

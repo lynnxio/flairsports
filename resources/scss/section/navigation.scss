@@ -1,14 +1,31 @@
-.nav-link{
+@use "../abstracts" as abs;
+
+.nav-link {
   color: #FFFFFF;
   font-size: 1.5em;
+  @include abs.min-bp(lg) {
+    font-size: abs.$font-size-secondary;
+    font-weight: normal;
+    font-family: abs.$font-family-secondary;
+  }
+
+  &:hover {
+    color: #ED4D8D;
+  }
 }
+
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
   color: #FFFFFF;
   font-size: 1.5em;
 }
+
 li.nav-item {
   background-color: rgba(#002448, 0.8);
   border-radius: 10px;
   margin-bottom: 1em;
+  @include abs.min-bp(lg) {
+    background-color: transparent;
+  }
 }
+
