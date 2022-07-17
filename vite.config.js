@@ -8,13 +8,25 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/scss/app.scss'
             ],
-            refresh: true,
-        })
+            refresh: true
+        }),
+        {
+            name: 'antlers',
+            handleHotUpdate({file, server}) {
+                if (file.endsWith('.antlers.html')) {
+                    server.ws.send({
+                        type: 'full-reload',
+                        path: '*',
+                    });
+                }
+            },
+        }
     ],
     server: {
         host: '192.168.56.56',
         watch: {
             usePolling: true,
+            interval: 1000
         },
-    },
+    }
 });

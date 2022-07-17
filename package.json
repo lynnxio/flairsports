@@ -1,26 +1,28 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "autoprefixer": "^10.4.0",
-        "cross-env": "^7.0",
-        "css-loader": "^5.2.7",
-        "postcss": "^8.4.5",
-        "postcss-import": "^14.0.1",
-        "resolve-url-loader": "^5.0.0",
-        "sass": "^1.53.0",
-        "sass-loader": "^12.6.0",
-        "vite": "^2.9.12",
-        "laravel-vite-plugin": "^0.2.2"
-    },
-    "dependencies": {
-        "@popperjs/core": "^2.11.5",
-        "@splidejs/splide": "^4.0.7",
-        "bootstrap": "^5.2.0-beta1",
-        "jquery": "^3.6.0",
-        "lity": "^2.4.1"
-    }
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cross-env": "^7.0",
+    "css-loader": "^5.2.7",
+    "postcss": "^8.4.5",
+    "postcss-import": "^14.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^12.6.0",
+    "vite": "^2.9.12",
+    "laravel-vite-plugin": "^0.2.2",
+    "vue-template-compiler": "^2.6.12",
+    "tailwindcss": "^2.1.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "@splidejs/splide": "^4.0.7",
+    "bootstrap": "^5.2.0-beta1",
+    "jquery": "^3.6.0",
+    "lity": "^2.4.1"
+  }
 }
