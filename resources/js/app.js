@@ -1,8 +1,5 @@
 // This is all you.
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import '/resources/scss/app.scss';
-
 // import '@popperjs/core'
 import 'bootstrap'
 import '@splidejs/splide'

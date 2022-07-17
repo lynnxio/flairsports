@@ -1,4 +1,6 @@
 {
-    "/js/site.js": "/js/site.js?id=b1209ee077a2a35c9870",
-    "/css/tailwind.css": "/css/tailwind.css?id=fca368fc01f57a79eb42"
+    "/js/app.js": "/js/app.js?id=6030652ac42c7820dbf1a53ab6e78091",
+    "/js/manifest.js": "/js/manifest.js?id=b753c71113d1c03b3f2f526244d13207",
+    "/css/app.css": "/css/app.css?id=88eb4c69bb0b5bee551528d3780cc290",
+    "/js/vendor.js": "/js/vendor.js?id=138ba60518cd3bafa714bc64ebd8ccce"
 }
