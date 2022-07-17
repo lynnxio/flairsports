@@ -14,9 +14,11 @@ const mix = require('laravel-mix');
 mix.autoload({
     jquery: ['$', 'window.jQuery', 'jquery']
 })
-    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/app.js', 'public/js').extract()
+    .sass('resources/scss/vendors/bootstrap.scss', 'public/css')
+    .sass('resources/scss/vendors/lity.scss', 'public/css')
+    .sass('resources/scss/vendors/splide.scss', 'public/css')
     .sass('resources/scss/app.scss', 'public/css')
-    .extract()
 
 if (mix.inProduction()) {
     mix.version();
