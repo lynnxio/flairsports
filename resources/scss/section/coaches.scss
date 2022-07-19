@@ -6,6 +6,11 @@
   background-repeat: no-repeat;
   padding: 5em 0;
 
+  @include abs.min-bp(md) {
+    background-position: center;
+    background-image: url("/public/assets/meet-our-coaches/coaches-bg-img.jpg");
+  }
+
   .title {
     color: abs.$white;
     font-size: abs.$font-size-primary;

@@ -1,0 +1,6 @@
+@use "../abstracts" as abs;
+
+.team {
+  background-color: abs.$blue;
+  padding: 5em 2em;
+}

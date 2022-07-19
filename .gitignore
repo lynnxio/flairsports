@@ -11,7 +11,7 @@
 .php_cs.cache
 docker-compose.override.yml
 Homestead.json
-npm-debug.log
+npm-debug.logv
 yarn-error.log
 .DS_Store
 /.idea
