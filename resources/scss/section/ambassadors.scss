@@ -1,0 +1,63 @@
+@use "../abstracts" as abs;
+
+.ambassadors {
+  background-color: abs.$blue;
+  padding: 5em 2em;
+
+  &__title {
+    color: abs.$white;
+    font-family: abs.$font-family-primary;
+    font-size: abs.$font-size-primary;
+    font-weight: bold;
+    padding-bottom: 1em;
+  }
+
+  &__card {
+    position: relative;
+    margin-bottom: 55%;
+    @include abs.min-bp(md) {
+      margin-bottom: 5em;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: abs.$shadow-primary;
+  }
+
+  &__info {
+    position: absolute;
+    background-color: #D9D9D9CC;
+    border-top: abs.$pink solid 5px;
+    text-align: center;
+    padding: 0.5em 1em;
+    bottom: -18%;
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+    @include abs.min-bp(md) {
+      bottom: -13%;
+    }
+    @include abs.min-bp(xl) {
+      bottom: -10%;
+    }
+  }
+
+  &__name {
+    color: abs.$black;
+    font-size: abs.$font-family-secondary;
+    font-weight: bold;
+    @include abs.min-bp(md) {
+      font-size: 1em;
+    }
+    @include abs.min-bp(xl) {
+      font-size: 1.2em;
+    }
+  }
+
+  &__description {
+    color: abs.$grey;
+    font-size: abs.$font-size-secondary;
+  }
+}

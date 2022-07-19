@@ -1,0 +1,15 @@
+title: Coaches
+data:
+  info:
+    -
+      name: Rahman
+      description: 'Head Coach'
+      image: 'meet-our-coaches/Head Coach Rahman.jpg'
+    -
+      name: Huda
+      description: 'Coach 1'
+      image: meet-our-coaches/3.jpg
+    -
+      name: Hafez
+      description: 'Coach 2'
+      image: 'meet-our-coaches/Coach Hafez.jpg'
