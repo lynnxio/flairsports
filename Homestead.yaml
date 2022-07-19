@@ -1,0 +1,26 @@
+ip: 192.168.56.56
+memory: 2048
+cpus: 2
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+ssl: true
+keys:
+  - ~/.ssh/id_rsa
+folders:
+  - map: 'D:\projects\flairsports'
+    to: /home/vagrant/code
+sites:
+  - map: flairsports.test
+    to: /home/vagrant/code/public
+databases:
+  - homestead
+features:
+  - mysql: true
+  - mariadb: false
+  - postgresql: false
+  - ohmyzsh: false
+  - webdriver: false
+services:
+  - enabled: [ mysql ]
+name: flairsports
+hostname: flairsports
