@@ -20,10 +20,10 @@
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
-//@import "bootstrap/scss/card";
+//@import "bootstrap/scss/card"; -- DONT ENABLE
 //@import "bootstrap/scss/accordion";
 //@import "bootstrap/scss/breadcrumb";
-//@import "bootstrap/scss/pagination";
+@import "bootstrap/scss/pagination";
 //@import "bootstrap/scss/badge";
 //@import "bootstrap/scss/alert";
 //@import "bootstrap/scss/progress";
@@ -43,8 +43,3 @@
 
 // Utilities
 @import "bootstrap/scss/utilities/api";
-
-// Default theme
-@import '@splidejs/splide/dist/css/splide.min.css';
-@import 'lity/dist/lity.min.css';
-

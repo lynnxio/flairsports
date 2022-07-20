@@ -21,7 +21,7 @@
 
   .card {
     box-shadow: abs.$shadow-primary;
-    border-radius: 10px;
+    border-radius: abs.$border-radius-primary;
     margin: 6em 0 5em 15%;
     display: grid;
     place-items: center;
@@ -31,7 +31,7 @@
     &__img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: abs.$border-radius-primary;
     }
 
     &__content {
