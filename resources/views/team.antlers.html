@@ -1,13 +1,88 @@
 <section class="team">
     <div class="container">
-        <h1>Our Teams</h1>
-        <div class="row">
-            <div class="col-12">
-                <div class="col-12">
-                    
+        <h1 class="team__title">Our Teams</h1>
+    </div>
+    <div class="row">
+        {{collection:players paginate="12" as="posts" }}
+
+        {{if no_results}}
+        <p>Aww, there are no results.</p>
+        {{/if}}
+
+        {{posts}}
+        <div class="col-12 col-md-3 mb-5">
+            <div class="team__card">
+                <div class="team__ribbon">
+                    {{join_year ? join_year : '2022'}}
                 </div>
+                <img alt="" class="team__img" src="{{image:url}}">
+                <div class="team__no">{{position ? position : '32'}}</div>
+            </div>
+            <div class="team__name">
+                {{title}}
             </div>
         </div>
-    </div>
+        {{/posts}}
 
+        {{paginate}}
+        <nav aria-label="...">
+            <ul class="pagination">
+                {{ if prev_page }}
+                <li class="page-item">
+                    <a class="page-link" href="{{ prev_page }}">Previous</a>
+                </li>
+                {{ else }}
+                <li class="page-item disabled">
+                    <span class="page-link">Previous</span>
+                </li>
+                {{ /if }}
+                {{ links:segments }}
+
+                {{ first }}
+                {{ if page == current_page }}
+                <li aria-current="page" class="page-item active"><span class="page-link">{{ page }}</span></li>
+                {{ else }}
+                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
+                {{ /if }}
+                {{ /first }}
+
+                {{ if slider }}
+                <li class="disabled"><span>...</span></li>
+                {{ /if }}
+
+                {{ slider }}
+                {{ if page == current_page }}
+                <li aria-current="page" class="page-item active"><span class="page-link">{{ page }}</span></li>
+                {{ else }}
+                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
+                {{ /if }}
+                {{ /slider }}
+
+                {{ if slider || (!slider && last) }}
+                <li class="disabled"><span>...</span></li>
+                {{ /if }}
+
+                {{ last }}
+                {{ if page == current_page }}
+                <li aria-current="page" class="page-item active"><span class="page-link">{{ page }}</span></li>
+                {{ else }}
+                <li class="page-item"><a class="page-link" href="{{ url }}">{{ page }}</a></li>
+                {{ /if }}
+                {{ /last }}
+                {{/links:segments }}
+                {{ if next_page }}
+                <li class="page-item">
+                    <a class="page-link" href="{{ next_page }}">Next</a>
+                </li>
+                {{ else }}
+                <li class="page-item disabled">
+                    <span class="page-link">Next</span>
+                </li>
+                {{ /if }}
+            </ul>
+        </nav>
+        {{/paginate}}
+
+        {{/collection:players}}
+    </div>
 </section>

@@ -2,3 +2,12 @@ name: admin
 super: true
 id: b59771b7-8349-45f1-8eb0-7a8129117a97
 password_hash: $2y$10$jayUF8prZhNG7b3tLE5Hiu6vnuA2XbZOqZwsryHQon2ps9Opv4Ana
+preferences:
+  collections:
+    teams_list:
+      columns:
+        - title
+    players:
+      columns:
+        - image
+        - title

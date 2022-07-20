@@ -4,6 +4,7 @@ $white: #fbfbfd;
 $pink: #ED4D8D;
 $black: #000000;
 $grey: #333333;
+$red: #FF0000;
 
 //shadow
 $shadow-primary: rgba(0, 0, 0, 0.3) 0 2px 3px;
@@ -11,8 +12,15 @@ $shadow-primary: rgba(0, 0, 0, 0.3) 0 2px 3px;
 //font-size
 $font-size-primary: 3em;
 $font-size-secondary: 1.2em;
+$font-size-md: 1em;
 
 //font-family
 $font-family-primary: "montserrat", sans-serif;
 $font-family-secondary: "couriernew", sans-serif;
 $font-family-inter: "inter", sans-serif;
+
+//border-radius
+$border-radius-primary: 10px;
+
+//Gradient
+$gradient-black-blue: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 36, 72, 1) 100%);
