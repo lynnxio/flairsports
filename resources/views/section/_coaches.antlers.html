@@ -3,36 +3,22 @@
         <h2 class="title">
             Meet the Coaches
         </h2>
-        <div aria-label="Coaches Slider" class="splide" role="group" id="slider1">
+        <div aria-label="Coaches Slider" class="splide" id="slider1" role="group">
             <div class="splide__track">
                 <ul class="splide__list">
+                    {{coaches}}
+                    {{info}}
                     <li class="splide__slide">
                         <div class="card">
-                            <img alt="" class="card__img" data-splide-lazy="assets/meet-our-coaches/1.jpg">
+                            <img alt="" class="card__img" data-splide-lazy="{{image:url}}">
                             <div class="card__content">
-                                <div class="card__name">Coaches 1</div>
-                                <div class="card__description">4 years of coaching</div>
+                                <div class="card__name">{{name}}</div>
+                                <div class="card__description">{{description}}</div>
                             </div>
                         </div>
                     </li>
-                    <li class="splide__slide">
-                        <div class="card">
-                            <img alt="" class="card__img" data-splide-lazy="assets/meet-our-coaches/2.jpg">
-                            <div class="card__content">
-                                <div class="card__name">Coaches 1</div>
-                                <div class="card__description">4 years of coaching</div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="splide__slide">
-                        <div class="card">
-                            <img alt="" class="card__img" data-splide-lazy="assets/meet-our-coaches/3.jpg">
-                            <div class="card__content">
-                                <div class="card__name">Coaches 1</div>
-                                <div class="card__description">4 years of coaching</div>
-                            </div>
-                        </div>
-                    </li>
+                    {{/info}}
+                    {{/coaches}}
                 </ul>
             </div>
         </div>
