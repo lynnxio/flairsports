@@ -8,7 +8,7 @@ data:
     -
       name: Huda
       description: 'Coach 1'
-      image: meet-our-coaches/3.jpg
+      image: 'meet-our-coaches/Coach Huda.jpg'
     -
       name: Hafez
       description: 'Coach 2'
