@@ -30,7 +30,18 @@ li.nav-item {
 }
 
 .fixed-top.scrolled {
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #212529 !important;
   transition: background-color 250ms linear;
 }
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 

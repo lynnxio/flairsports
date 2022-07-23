@@ -16,9 +16,7 @@ new Splide('#slider1', {
     breakpoints: {
 
         992: {
-            lazyLoad: "nearby",
-            perPage: 1,
-            arrows: false
+            lazyLoad: "nearby", perPage: 1, arrows: false
         }
     }
 }).mount();
@@ -36,19 +34,14 @@ new Splide('#slider2', {
     breakpoints: {
 
         992: {
-            type: false,
-            padding: false,
-            lazyLoad: "nearby",
-            perPage: 1,
-            arrows: false,
-            pagination: true
+            type: false, padding: false, lazyLoad: "nearby", perPage: 1, arrows: false, pagination: true
         }
     }
 }).mount();
 
 $(function () {
     $(document).scroll(function () {
-      var $nav = $(".fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        var $nav = $(".fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
-  });
+});

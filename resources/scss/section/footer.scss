@@ -1,8 +1,8 @@
 @use "../abstracts" as abs;
 
 .footer {
-  background-color: abs.$white;
-  color: abs.$blue;
+  background-color: abs.$dark;
+  color: abs.$white;
   padding: 3em 2em;
 
   &__companyName {
@@ -34,7 +34,7 @@
 
   &__linkText {
     padding-left: 1em;
-    color: abs.$blue;
+    color: abs.$white;
     font-weight: abs.$font-family-primary;
     font-size: 1.3em;
   }
