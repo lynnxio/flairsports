@@ -1,0 +1,59 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          folder: bridge-the-gap
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          width: 50
+          validate:
+            - required
+      -
+        handle: layout_size
+        field:
+          options:
+            col-md-7: 60%
+            col-md-5: 40%
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          default: col-md-7
+          display: 'Layout Size'
+          type: select
+          icon: select
+          instructions: 'Choose 60% or 40%.'
+          width: 50
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Bridge The Gap'

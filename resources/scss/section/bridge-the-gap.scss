@@ -1,0 +1,43 @@
+@use "../abstracts" as abs;
+
+.bridge {
+  padding: 10em 2em;
+  background-color: abs.$blue;
+
+  &__card {
+    position: relative;
+  }
+
+  &__title {
+    color: abs.$white;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: abs.$font-family-primary;
+    margin-bottom: 1em;
+    @include abs.min-bp(md) {
+      margin-bottom: 2em;
+    }
+  }
+
+
+  &__img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: abs.$border-radius-primary;
+    box-shadow: abs.$shadow-primary;
+    cursor: pointer;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #d9d9d9;
+    color: abs.$black;
+    padding: 0 1em;
+    font-size: abs.$font-size-md;
+  }
+}

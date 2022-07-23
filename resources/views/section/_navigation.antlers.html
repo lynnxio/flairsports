@@ -1,18 +1,19 @@
 <nav class="navbar navbar-expand-xl bg-transparent fixed-top" id="navbar">
     <div class="container-fluid">
-        <a aria-label="homepage link" class="navbar-brand" href="#">
+        <a aria-label="homepage link" class="navbar-brand" href="{{site:url}}">
             <img alt="" class="d-inline-block align-text-top"
                  src="{{ glide src='assets/FLAIR TYPOGRAPHY LOGO.png' width='150'}}">
         </a>
-        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" 
-            data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+        <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
             <img alt="" src="{{ glide src='assets/burger-bar.png' width='40' }}">
         </button>
         <div class="collapse navbar-collapse text-center justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 {{nav:main_nav}}
-                <li class="nav-item ps-3 pt-3">
-                    <a aria-current="page" class="nav-link {{ is_current ? 'active' : '' }}." href="{{url}}">{{title}}</a>
+                <li class="nav-item ps-3">
+                    <a aria-current="page" class="nav-link {{ is_current ? 'active' : '' }}."
+                       href="{{url}}">{{title}}</a>
                 </li>
                 {{/nav:main_nav}}
             </ul>

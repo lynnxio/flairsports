@@ -1,24 +1,10 @@
 tree:
   -
-    id: 819176ce-25be-4c45-8745-2d8998da12ce
-    title: Founder
-    url: '#founder'
+    id: fc12fcc4-7e5b-4822-932d-5d664a5f90e3
+    entry: 71863091-5225-43bf-84c6-e32aa3b47c2d
   -
-    id: b3d0595a-c517-448d-8e4b-0846780bdbb0
-    title: Coaches
-    url: '#coaches'
-  -
-    id: bd41b6a9-a123-4013-9489-60dd6467d026
-    title: Actions
-    url: '#actions'
-  -
-    id: 674b5b9a-45db-45f2-a856-85a884c0c15e
-    title: 'Community Works'
-    url: '#community-works'
-  -
-    id: eca7e533-6cfd-4271-89c1-cf1f9c4732e8
-    title: 'Our Works'
-    url: '#our-works'
+    id: 0102ab6b-0546-4d89-8ad9-a4e86c654cdc
+    entry: 19505d85-e994-413f-b381-ec64c9cee0bd
   -
     id: 83ae4dcb-ea2b-4a40-a429-ada5b6614a80
     title: 'Location & Schedule'
