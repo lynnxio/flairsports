@@ -11,3 +11,9 @@ preferences:
       columns:
         - image
         - title
+  forms:
+    contact_us:
+      columns:
+        - name
+        - email
+        - datestamp
