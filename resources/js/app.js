@@ -45,3 +45,8 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
+
+$('#mobile_button').click(function(){
+    $('#navbar').toggleClass("bg-change-click");
+    $('#navbar').toggleClass( "bg-transparent");
+})
