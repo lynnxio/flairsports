@@ -11,6 +11,11 @@ preferences:
       columns:
         - image
         - title
+    bridge_the_gap:
+      columns:
+        - title
+        - slug
+        - layout_size
   forms:
     contact_us:
       columns:
