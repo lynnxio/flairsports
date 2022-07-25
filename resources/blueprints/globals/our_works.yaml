@@ -1,0 +1,18 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: image
+        field:
+          mode: grid
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
