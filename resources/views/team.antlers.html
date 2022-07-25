@@ -24,7 +24,7 @@
             {{/posts}}
 
             {{paginate}}
-            <nav aria-label="...">
+            <nav aria-label="..." class="d-flex justify-content-center">
                 <ul class="pagination">
                     {{ if prev_page }}
                     <li class="page-item">
@@ -85,5 +85,18 @@
             {{/collection:players}}
         </div>
     </div>
-
 </section>
+
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+    
+    $('#mobile_button').click(function(){
+        $('#navbar').toggleClass("bg-change-click");
+        $('#navbar').toggleClass( "bg-transparent");
+    })
+</script>
