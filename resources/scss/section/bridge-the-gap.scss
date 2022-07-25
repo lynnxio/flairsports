@@ -15,7 +15,8 @@
     font-family: abs.$font-family-primary;
     margin-bottom: 1em;
     @include abs.min-bp(md) {
-      margin-bottom: 2em;
+      font-size: abs.$font-size-primary;
+      line-height: 1.5em;
     }
   }
 
