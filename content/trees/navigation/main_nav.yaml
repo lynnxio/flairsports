@@ -6,10 +6,6 @@ tree:
     id: 0102ab6b-0546-4d89-8ad9-a4e86c654cdc
     entry: 19505d85-e994-413f-b381-ec64c9cee0bd
   -
-    id: 83ae4dcb-ea2b-4a40-a429-ada5b6614a80
-    title: 'Location & Schedule'
-    url: '#location-schedule'
-  -
     id: 8de7406b-0e11-41c1-bb00-723e7b8035a8
     title: 'Contact Us'
-    url: '#contact-us'
+    url: '/#contact-us'
