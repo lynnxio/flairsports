@@ -24,7 +24,7 @@ li.nav-item {
   background-color: rgba(#002448, 0.8);
   border-radius: 10px;
   margin-bottom: 1em;
-  @include abs.min-bp(lg) {
+  @include abs.min-bp(md) {
     background-color: transparent;
   }
 }
