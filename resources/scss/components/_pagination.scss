@@ -1,0 +1,10 @@
+@use "../abstracts" as abs;
+
+.page-link.active, .active > .page-link {
+  background-color: abs.$pink;
+  border-color: abs.$pink;
+}
+
+.page-link {
+  color: abs.$pink;
+}
