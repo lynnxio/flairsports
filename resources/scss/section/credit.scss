@@ -1,0 +1,25 @@
+@use "../abstracts" as abs;
+
+.credit {
+  height: 100vh;
+  background-color: abs.$blue;
+  padding: 5em 2em;
+  display: grid;
+  place-items: center;
+
+  &__title {
+    color: abs.$white;
+    font-family: abs.$font-family-primary;
+    font-size: abs.$font-size-primary;
+    font-weight: bold;
+  }
+
+  a {
+    color: abs.$white;
+    font-size: abs.$font-size-secondary;
+  }
+
+  li {
+    color: abs.$white;
+  }
+}
