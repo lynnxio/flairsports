@@ -7,28 +7,17 @@
     <div aria-label="Actions Slider" class="splide" id="slider2" role="group">
         <div class="splide__track">
             <ul class="splide__list">
+                {{actions:youtube}}
                 <li class="splide__slide">
-                    <a data-lity href="https://www.youtube.com/watch?v=XSGBVzeBUbk" aria-label="youtube video">
+                    <a aria-label="youtube video" data-lity href="{{link}}">
                         <div class="youtubeFrame">
-                            <img alt="" class="youtubeFrame__thumbnail" src="assets/youtube-placeholder.png">
+                            <img alt="" class="youtubeFrame__thumbnail"
+                                 src="{{thumbnail}}">
                             <img alt="" class="youtubeFrame__playButton" src="assets/youtube-play-button.png">
                         </div>
                     </a>
                 </li>
-                <li class="splide__slide"><a data-lity href="https://www.youtube.com/watch?v=XSGBVzeBUbk"
-                                             aria-label="youtube video">
-                    <div class="youtubeFrame">
-                        <img alt="" class="youtubeFrame__thumbnail" src="assets/youtube-placeholder.png">
-                        <img alt="" class="youtubeFrame__playButton" src="assets/youtube-play-button.png">
-                    </div>
-                </a></li>
-                <li class="splide__slide"><a data-lity href="https://www.youtube.com/watch?v=XSGBVzeBUbk"
-                                             aria-label="youtube video">
-                    <div class="youtubeFrame">
-                        <img alt="" class="youtubeFrame__thumbnail" src="assets/youtube-placeholder.png">
-                        <img alt="" class="youtubeFrame__playButton" src="assets/youtube-play-button.png">
-                    </div>
-                </a></li>
+                {{/actions:youtube}}
             </ul>
         </div>
     </div>

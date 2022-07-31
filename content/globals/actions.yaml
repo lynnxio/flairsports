@@ -1,0 +1,21 @@
+title: Actions
+data:
+  youtube:
+    -
+      link: 'https://www.youtube.com/watch?v=iBnXN1WeeAU'
+      thumbnail: 'https://img.youtube.com/vi/iBnXN1WeeAU/maxresdefault.jpg'
+    -
+      link: 'https://www.youtube.com/watch?v=t7ogYU0kF0o'
+      thumbnail: 'https://img.youtube.com/vi/Xa0UwWVKKxA/maxresdefault.jpg'
+    -
+      link: 'https://www.youtube.com/watch?v=xHnXgw0Bwws'
+      thumbnail: 'https://img.youtube.com/vi/xHnXgw0Bwws/maxresdefault.jpg'
+    -
+      link: 'https://www.youtube.com/watch?v=hbF6aI4X5pE'
+      thumbnail: 'https://img.youtube.com/vi/hbF6aI4X5pE/maxresdefault.jpg'
+    -
+      link: 'https://www.youtube.com/watch?v=6fBH-vvmKio'
+      thumbnail: 'https://img.youtube.com/vi/6fBH-vvmKio/maxresdefault.jpg'
+    -
+      link: 'https://www.youtube.com/watch?v=Xa0UwWVKKxA'
+      thumbnail: 'https://img.youtube.com/vi/Xa0UwWVKKxA/maxresdefault.jpg'

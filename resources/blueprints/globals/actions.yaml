@@ -1,0 +1,35 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: youtube
+        field:
+          fields:
+            -
+              handle: link
+              field:
+                display: Link
+                type: link
+                icon: link
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+            -
+              handle: thumbnail
+              field:
+                display: Thumbnail
+                type: link
+                icon: link
+                instructions: 'https://boingboing.net/features/getthumbs use this website to extract youtube thumbnail link'
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+          mode: stacked
+          reorderable: true
+          display: Youtube
+          type: grid
+          icon: grid
+          listable: hidden
+          instructions_position: above
+          visibility: visible
