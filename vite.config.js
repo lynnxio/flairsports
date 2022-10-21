@@ -1,4 +1,4 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
@@ -9,24 +9,11 @@ export default defineConfig({
                 'resources/scss/app.scss'
             ],
             refresh: true
-        }),
-        {
-            name: 'antlers',
-            handleHotUpdate({file, server}) {
-                if (file.endsWith('.antlers.html')) {
-                    server.ws.send({
-                        type: 'full-reload',
-                        path: '*',
-                    });
-                }
-            },
-        }
+        })
     ],
     server: {
-        host: '192.168.56.56',
-        watch: {
-            usePolling: true,
-            interval: 1000
-        },
+        hmr: {
+            host: 'localhost'
+        }
     }
 });
